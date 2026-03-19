@@ -12,23 +12,33 @@ body{
     background:#f5f7fb;
 }
 
-/* Header */
+/* HEADER */
 header{
     background:#0f172a;
     color:white;
     text-align:center;
     padding:40px;
 }
-
 header img{
     width:150px;
     height:150px;
     border-radius:50%;
     object-fit:cover;
-    margin-top:10px;
+    border:4px solid white;
 }
 
-/* Navigation */
+/* BUTTON */
+.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#2563eb;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+/* NAV */
 nav{
     background:#1e293b;
     text-align:center;
@@ -42,7 +52,7 @@ nav a{
     cursor:pointer;
 }
 
-/* Sections */
+/* SECTIONS */
 .section{
     display:none;
     max-width:900px;
@@ -50,7 +60,7 @@ nav a{
     padding:40px 20px;
 }
 
-/* Cards */
+/* CARD */
 .card{
     background:white;
     padding:20px;
@@ -58,7 +68,7 @@ nav a{
     margin:15px 0;
 }
 
-/* Skills */
+/* SKILLS */
 .skills{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
@@ -71,7 +81,7 @@ nav a{
     text-align:center;
 }
 
-/* Contact */
+/* CONTACT */
 .contact a{
     display:block;
     margin:10px 0;
@@ -85,6 +95,7 @@ function showSection(id){
     document.querySelectorAll('.section').forEach(sec=>{
         sec.style.display = 'none';
     });
+
     document.getElementById(id).style.display = 'block';
 }
 </script>
@@ -93,15 +104,21 @@ function showSection(id){
 
 <body onload="showSection('home')">
 
+<!-- HEADER -->
 <header>
-<h1>Ayene Asefa</h1>
 
-<!-- YOUR PHOTO -->
 <img src="myphoto.jpg" alt="Ayene Asefa">
 
+<h1>Ayene Asefa</h1>
 <p>Video Editor | Programmer | IT Support Specialist</p>
+
+<a href="MY CV file.pdf" download class="button">
+Download My CV
+</a>
+
 </header>
 
+<!-- NAVIGATION -->
 <nav>
 <a onclick="showSection('home')">Home</a>
 <a onclick="showSection('about')">About</a>
@@ -121,16 +138,17 @@ function showSection(id){
 <h2>Skills</h2>
 <div class="skills">
 <div class="skill">Video Editing</div>
-<div class="skill">programming</div>
+<div class="skill">HTML & CSS</div>
+<div class="skill">JavaScript</div>
 <div class="skill">IT Support</div>
 </div>
 </div>
 
 <div class="card">
 <h2>Contact</h2>
-<p>Email: ayeneasefakelkay@gmail.com</p>
-<p>Phone: +251942038404</p>
-<p>Telegram: @WeSaw27</p>
+<p>Email: youremail@gmail.com</p>
+<p>Phone: +251912345678</p>
+<p>Telegram: @go21</p>
 </div>
 
 </div>
@@ -139,7 +157,17 @@ function showSection(id){
 <div id="about" class="section">
 <div class="card">
 <h2>About Me</h2>
-<p>I am a Computer Science graduate with strong skills in video editing, programming, and IT support. I enjoy combining creativity and technology.</p>
+<p>
+I am a highly motivated Computer Science graduate from Kotebe University of Education (2024), with a strong passion for technology, problem-solving, and digital innovation.
+</p>
+
+<p>
+After graduation, I worked as an IT Teacher at Glory School, where I developed strong communication skills and the ability to explain technical concepts clearly. Currently, I am working as an IT Support professional at ICS, where I handle system troubleshooting, technical support, and ensure smooth IT operations.
+</p>
+
+<p>
+In addition, I am skilled in video editing and programming, allowing me to combine creativity with technical expertise. I am committed to continuous learning and always strive to deliver efficient, reliable, and high-quality solutions.
+</p>
 </div>
 </div>
 
@@ -149,7 +177,8 @@ function showSection(id){
 <h2>Skills</h2>
 <div class="skills">
 <div class="skill">Video Editing</div>
-<div class="skill">programming</div>
+<div class="skill">programmer</div>
+
 <div class="skill">IT Support</div>
 </div>
 </div>
@@ -161,7 +190,7 @@ function showSection(id){
 <h2>Contact</h2>
 <div class="contact">
 <a href="mailto:ayeneasefakelkay@gmail.com">📧 ayeneasefakelkay@gmail.com</a>
-<a href="tel:+251942038404">📞 +251942038404</a>
+<a href="tel:+251942038404">📞 +2519142038404</a>
 <a href="https://t.me/WeSaw" target="_blank">💬 @WeSaw</a>
 </div>
 </div>
