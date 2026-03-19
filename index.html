@@ -49,6 +49,9 @@ nav a{
     font-weight:bold;
     cursor:pointer;
 }
+nav a:hover{
+    color:#60a5fa;
+}
 
 /* SECTIONS */
 .section{
@@ -64,6 +67,7 @@ nav a{
     padding:25px;
     border-radius:10px;
     margin:20px 0;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
 /* SKILLS */
@@ -75,6 +79,20 @@ nav a{
 .skill{
     background:#eef2ff;
     padding:10px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
+.service{
+    background:#eef2ff;
+    padding:12px;
     border-radius:8px;
     text-align:center;
     font-weight:bold;
@@ -103,7 +121,7 @@ function showSection(id){
 
 <body onload="showSection('about')">
 
-<header style="background:#0f172a; color:white; padding:50px;">
+<header>
   <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
 
     <!-- Left Rectangle Image -->
@@ -111,12 +129,10 @@ function showSection(id){
          alt="Left" 
          style="width:300px; height:180px; object-fit:cover; border-radius:12px;">
 
-    <!-- Center Circular Photo -->
+    <!-- Center Photo -->
     <div style="text-align:center;">
-      <img src="asquare.jpg" 
-           alt="Ayene Asefa" 
-           style="width:150px; height:150px; border-radius:50%; object-fit:cover; display:block; margin:auto;">
-      <h1 style="margin:10px 0 5px;">Ayene Asefa</h1>
+      <img src="asquare.jpg" alt="Ayene Asefa">
+      <h1>Ayene Asefa</h1>
       <p>Video Editor | Programmer | IT Support Specialist</p>
       <a href="MY CV file.pdf" class="button">Download CV</a>
     </div>
@@ -131,13 +147,13 @@ function showSection(id){
 <nav>
 <a onclick="showSection('about')">About</a>
 <a onclick="showSection('skills')">Skills</a>
+<a onclick="showSection('services')">Services</a>
 <a onclick="showSection('contact')">Contact</a>
 </nav>
 
 <!-- ABOUT -->
 <div id="about" class="section">
 <div class="card">
-
 
 <p>
 I am a passionate and dedicated Computer Science graduate from Kotebe University of Education (2024). I have strong skills in IT support, programming, and video editing, and I enjoy solving technical problems and improving digital systems.
@@ -166,7 +182,7 @@ I am particularly interested in roles related to IT support, documentation syste
 <div class="skills">
 <div class="skill">Adobe Premiere Pro</div>
 <div class="skill">Video Editing</div>
-<div class="skill">programmer</div>
+<div class="skill">Programming</div>
 <div class="skill">IT Support</div>
 <div class="skill">System Troubleshooting</div>
 <div class="skill">Data Management</div>
@@ -175,10 +191,12 @@ I am particularly interested in roles related to IT support, documentation syste
 
 </div>
 </div>
-    <!-- SERVICES -->
+
+<!-- SERVICES -->
 <div id="services" class="section">
 <div class="card">
 <h2>Services</h2>
+
 <div class="services">
 <div class="service">Video Editing & Post-Production</div>
 <div class="service">YouTube & Social Media Content Creation</div>
@@ -189,20 +207,18 @@ I am particularly interested in roles related to IT support, documentation syste
 <div class="service">Data Management & Documentation</div>
 <div class="service">Training & Technical Guidance</div>
 </div>
-</div>
-</div>
 
+</div>
+</div>
 
 <!-- CONTACT -->
 <div id="contact" class="section">
 <div class="card">
 
-
 <div class="contact">
 <a href="mailto:ayeneasefakelkay@gmail.com">📧 Email: ayeneasefakelkay@gmail.com</a>
 <a href="tel:+251942038404">📞 Phone: +251942038404</a>
 <a href="https://t.me/WeSaw" target="_blank">💬 Telegram: @WeSaw</a>
-
 </div>
 
 </div>
