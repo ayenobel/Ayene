@@ -6,23 +6,86 @@
 <title>Ayene Asefa | Portfolio</title>
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f7fb;}
-header{background:#0f172a;color:white;text-align:center;padding:50px;}
-nav{background:#1e293b;text-align:center;padding:15px;}
-nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold;cursor:pointer;}
-section{max-width:1000px;margin:auto;padding:40px;display:none;}
-.card{background:white;padding:25px;border-radius:10px;margin:20px 0;}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;}
-.skill{background:#eef2ff;padding:10px;border-radius:8px;text-align:center;}
-.contact a{display:block;margin:10px 0;color:#2563eb;text-decoration:none;}
+body{
+    font-family:Arial;
+    margin:0;
+    background:#f5f7fb;
+}
+
+/* Header */
+header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-top:10px;
+}
+
+/* Navigation */
+nav{
+    background:#1e293b;
+    text-align:center;
+    padding:15px;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Sections */
+.section{
+    display:none;
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin:15px 0;
+}
+
+/* Skills */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:10px;
+}
+.skill{
+    background:#eef2ff;
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+}
+
+/* Contact */
+.contact a{
+    display:block;
+    margin:10px 0;
+    color:#2563eb;
+    text-decoration:none;
+}
 </style>
 
 <script>
-function showSection(sectionId){
-    let sections = document.querySelectorAll("section");
-    sections.forEach(sec => sec.style.display = "none");
-
-    document.getElementById(sectionId).style.display = "block";
+function showSection(id){
+    document.querySelectorAll('.section').forEach(sec=>{
+        sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
 }
 </script>
 
@@ -32,6 +95,10 @@ function showSection(sectionId){
 
 <header>
 <h1>Ayene Asefa</h1>
+
+<!-- YOUR PHOTO -->
+<img src="myphoto.jpg" alt="Ayene Asefa">
+
 <p>Video Editor | Programmer | IT Support Specialist</p>
 </header>
 
@@ -42,8 +109,8 @@ function showSection(sectionId){
 <a onclick="showSection('contact')">Contact</a>
 </nav>
 
-<!-- HOME (ALL SECTIONS) -->
-<section id="home">
+<!-- HOME -->
+<div id="home" class="section">
 
 <div class="card">
 <h2>About</h2>
@@ -54,54 +121,51 @@ function showSection(sectionId){
 <h2>Skills</h2>
 <div class="skills">
 <div class="skill">Video Editing</div>
-<div class="skill">HTML & CSS</div>
-<div class="skill">JavaScript</div>
+<div class="skill">programming</div>
 <div class="skill">IT Support</div>
 </div>
 </div>
 
 <div class="card">
 <h2>Contact</h2>
-<p>Email: youremail@gmail.com</p>
-<p>Phone: +251912345678</p>
-<p>Telegram: @go21</p>
+<p>Email: ayeneasefakelkay@gmail.com</p>
+<p>Phone: +251942038404</p>
+<p>Telegram: @WeSaw27</p>
 </div>
 
-</section>
+</div>
 
-<!-- ABOUT ONLY -->
-<section id="about">
+<!-- ABOUT -->
+<div id="about" class="section">
 <div class="card">
 <h2>About Me</h2>
-<p>I am a Computer Science graduate with skills in video editing, programming, and IT support.</p>
+<p>I am a Computer Science graduate with strong skills in video editing, programming, and IT support. I enjoy combining creativity and technology.</p>
 </div>
-</section>
+</div>
 
-<!-- SKILLS ONLY -->
-<section id="skills">
+<!-- SKILLS -->
+<div id="skills" class="section">
 <div class="card">
 <h2>Skills</h2>
 <div class="skills">
-<div class="skill">Adobe Premiere Pro</div>
 <div class="skill">Video Editing</div>
-<div class="skill">HTML & CSS</div>
-<div class="skill">JavaScript</div>
+<div class="skill">programming</div>
 <div class="skill">IT Support</div>
 </div>
 </div>
-</section>
+</div>
 
-<!-- CONTACT ONLY -->
-<section id="contact">
+<!-- CONTACT -->
+<div id="contact" class="section">
 <div class="card">
 <h2>Contact</h2>
 <div class="contact">
-<a href="mailto:youremail@gmail.com">📧 youremail@gmail.com</a>
-<a href="tel:+251912345678">📞 +251912345678</a>
-<a href="https://t.me/go21" target="_blank">💬 @go21</a>
+<a href="mailto:ayeneasefakelkay@gmail.com">📧 ayeneasefakelkay@gmail.com</a>
+<a href="tel:+251942038404">📞 +251942038404</a>
+<a href="https://t.me/WeSaw" target="_blank">💬 @WeSaw</a>
 </div>
 </div>
-</section>
+</div>
 
 </body>
 </html>
