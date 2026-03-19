@@ -103,16 +103,29 @@ function showSection(id){
 
 <body onload="showSection('about')">
 
-<header>
-<h1>Ayene Asefa</h1>
+<header style="background:#0f172a; color:white; padding:50px;">
+  <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
 
-<!-- YOUR PHOTO -->
-<img src="myphoto.jpg" alt="Ayene Asefa">
+    <!-- Left Rectangle Image -->
+    <img src="myphoto.jpg" 
+         alt="Left" 
+         style="width:120px; height:180px; object-fit:cover; border-radius:12px;">
 
-<p>Video Editor | Programmer | IT Support Specialist</p>
+    <!-- Center Circular Photo -->
+    <div style="text-align:center;">
+      <img src="myphoto.jpg" 
+           alt="Ayene Asefa" 
+           style="width:150px; height:150px; border-radius:50%; object-fit:cover; display:block; margin:auto;">
+      <h1 style="margin:10px 0 5px;">Ayene Asefa</h1>
+      <p>Video Editor | Programmer | IT Support Specialist</p>
+      <a href="MY CV file.pdf" class="button">Download CV</a>
+    </div>
 
-<!-- DOWNLOAD CV -->
-<a href="MY CV file.pdf" class="button" download>Download CV</a>
+    <!-- Right Rectangle Image -->
+    <img src="myphoto.jpg" 
+         alt="Right" 
+         style="width:120px; height:180px; object-fit:cover; border-radius:12px;">
+  </div>
 </header>
 
 <nav>
