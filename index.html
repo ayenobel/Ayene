@@ -24,18 +24,16 @@ header img{
     height:150px;
     border-radius:50%;
     object-fit:cover;
-    border:4px solid white;
+    margin:10px 0;
 }
-
-/* BUTTON */
 .button{
     display:inline-block;
-    margin-top:15px;
+    margin-top:10px;
     padding:10px 18px;
     background:#2563eb;
     color:white;
-    border-radius:6px;
     text-decoration:none;
+    border-radius:6px;
 }
 
 /* NAV */
@@ -63,9 +61,9 @@ nav a{
 /* CARD */
 .card{
     background:white;
-    padding:20px;
+    padding:25px;
     border-radius:10px;
-    margin:15px 0;
+    margin:20px 0;
 }
 
 /* SKILLS */
@@ -79,6 +77,7 @@ nav a{
     padding:10px;
     border-radius:8px;
     text-align:center;
+    font-weight:bold;
 }
 
 /* CONTACT */
@@ -87,6 +86,7 @@ nav a{
     margin:10px 0;
     color:#2563eb;
     text-decoration:none;
+    font-weight:bold;
 }
 </style>
 
@@ -95,106 +95,88 @@ function showSection(id){
     document.querySelectorAll('.section').forEach(sec=>{
         sec.style.display = 'none';
     });
-
     document.getElementById(id).style.display = 'block';
 }
 </script>
 
 </head>
 
-<body onload="showSection('home')">
+<body onload="showSection('about')">
 
-<!-- HEADER -->
 <header>
+<h1>Ayene Asefa</h1>
 
+<!-- YOUR PHOTO -->
 <img src="myphoto.jpg" alt="Ayene Asefa">
 
-<h1>Ayene Asefa</h1>
 <p>Video Editor | Programmer | IT Support Specialist</p>
 
-<a href="MY CV file.pdf" download class="button">
-Download My CV
-</a>
-
+<!-- DOWNLOAD CV -->
+<a href="MY CV file.pdf" class="button" download>Download CV</a>
 </header>
 
-<!-- NAVIGATION -->
 <nav>
-<a onclick="showSection('home')">Home</a>
 <a onclick="showSection('about')">About</a>
 <a onclick="showSection('skills')">Skills</a>
 <a onclick="showSection('contact')">Contact</a>
 </nav>
 
-<!-- <!-- HOME -->
-<div id="home" class="section">
-
-<div class="card">
-<h2>About</h2>
-<p>I am a Computer Science graduate with skills in video editing, programming, and IT support.</p>
-</div>
-
-<div class="card">
-<h2>Skills</h2>
-<div class="skills">
-<div class="skill">Video Editing</div>
-<div class="skill">HTML & CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">IT Support</div>
-</div>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>Email: youremail@gmail.com</p>
-<p>Phone: +251912345678</p>
-<p>Telegram: @go21</p>
-</div>
-
-</div>
-
 <!-- ABOUT -->
 <div id="about" class="section">
 <div class="card">
-<h2>About Me</h2>
+
+
 <p>
-I am a highly motivated Computer Science graduate from Kotebe University of Education (2024), with a strong passion for technology, problem-solving, and digital innovation.
+I am a passionate and dedicated Computer Science graduate from Kotebe University of Education (2024). I have strong skills in IT support, programming, and video editing, and I enjoy solving technical problems and improving digital systems.
 </p>
 
 <p>
-After graduation, I worked as an IT Teacher at Glory School, where I developed strong communication skills and the ability to explain technical concepts clearly. Currently, I am working as an IT Support professional at ICS, where I handle system troubleshooting, technical support, and ensure smooth IT operations.
+After graduation, I worked as an IT Teacher at Glory School, where I developed strong communication and technical training skills. Currently, I am working as an IT Support professional at ICS, where I handle system troubleshooting, user support, and digital system maintenance.
 </p>
 
 <p>
-In addition, I am skilled in video editing and programming, allowing me to combine creativity with technical expertise. I am committed to continuous learning and always strive to deliver efficient, reliable, and high-quality solutions.
+I am highly motivated, detail-oriented, and committed to continuous learning. I aim to contribute effectively to organizational growth by combining my technical expertise with creativity and problem-solving skills.
 </p>
+
+<p>
+I am particularly interested in roles related to IT support, documentation systems (DMS/QMS), and digital solutions where I can add real value and grow professionally.
+</p>
+
 </div>
 </div>
 
 <!-- SKILLS -->
 <div id="skills" class="section">
 <div class="card">
-<h2>Skills</h2>
+<h2>Professional Skills</h2>
+
 <div class="skills">
+<div class="skill">Adobe Premiere Pro</div>
 <div class="skill">Video Editing</div>
 <div class="skill">programmer</div>
-
 <div class="skill">IT Support</div>
+<div class="skill">System Troubleshooting</div>
+<div class="skill">Data Management</div>
+<div class="skill">Microsoft Excel</div>
 </div>
+
 </div>
 </div>
 
 <!-- CONTACT -->
 <div id="contact" class="section">
 <div class="card">
-<h2>Contact</h2>
+
+
 <div class="contact">
-<a href="mailto:ayeneasefakelkay@gmail.com">📧 ayeneasefakelkay@gmail.com</a>
-<a href="tel:+251942038404">📞 +2519142038404</a>
-<a href="https://t.me/WeSaw" target="_blank">💬 @WeSaw</a>
+<a href="mailto:ayeneasefakelkay@gmail.com">📧 Email: ayeneasefakelkay@gmail.com</a>
+<a href="tel:+251942038404">📞 Phone: +251942038404</a>
+<a href="https://t.me/WeSaw" target="_blank">💬 Telegram: @WeSaw</a>
+
+</div>
+
 </div>
 </div>
-</div> -->
 
 </body>
 </html>
